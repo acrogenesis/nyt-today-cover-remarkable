@@ -1,0 +1,26 @@
+{
+  "name": "nyt-today-cover-remarkable",
+  "private": true,
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest --verbose",
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler publish src/index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^2.2.1",
+    "imagemagick-convert": "^1.0.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.14.1",
+    "@types/jest": "^28.1.6",
+    "@types/node-fetch": "^2.6.2",
+    "esbuild": "^0.15.5",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^29.0.1",
+    "jest-environment-wrangler": "^0.0.31",
+    "wrangler": "^2.0.22"
+  }
+}
